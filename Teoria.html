@@ -2,28 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-</head>
-<!-- Seletor de tipo, aplicando em uma teg -->
-<style>
-    p{
-     color: blueviolet;
-    }
-    /* Seletor de classe */
-    .paragrafo{
-        background-color: deeppink;
-        /* margin: 10px; - Aplica em todas as margens
-        /* margin: 10px 40px; - Aplica nas margens 'laterais' e 'superior e inferior'*/
-        /* margin: 10px 20px 30px 40px; - Aplica margens top, right, bottom, left */
-        margin: 10px 20px 30px 40px;
-        /* Alinha elementos ao centro */
-        text-align: center;
-    }
-    .imagem{
-        width: 150px;
-        height: 100px;
-    }
-</style>
-</html>
+<link rel="stylesheet" href="./css/styles.css">
 <title>Pagina inicial</title>
 </head>
 <!-- Aplicando css inline cor de fundo -->
@@ -164,7 +143,154 @@
         <dt>Javascript</dt>
         <dd>linguagem de programação</dd>
     </dl>
-        
 
+    <!-- Trabalhando com tabelas -->
+    <br>
+    <hr>
+    <!-- cria uma nova tabela -->
+    <table border ="1">
+        <!--tr cria uma nova linha-->
+        <tr>
+            <!-- th insere uma celula de Cabeçalho -->
+             <th>Nome</th>
+             <th>Idade</th>
+             <th>Profissão</th>
+        </tr>
+        <tr>
+            <!-- td cria uma nova celula de dados -->
+             <td>Douglas</td>
+             <td>32</td>
+             <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Ricardo</td>
+            <td>33</td>
+            <td>Professor</td>
+        </tr>
+    </table>
+<br>
+    <table class="tabela">
+        <!-- tag semantica de cabeçalho -->
+        <thead>
+            <tr class="">
+                <th class="cabecalho cabecalho2">Nome</th>
+                <th class="cabecalho cabecalho3">Telefone</th>
+                <th class="cabecalho cabecalho2">Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="celula">Jose da Silva</td>
+                <td class="celula">2345678</td>
+                <td class="celula">Andradina</td>
+            </tr>
+            <tr>
+                <td class="celula">Maria da Silva</td>
+                <td class="celula">2345678</td>
+                <td class="celula">Andradina</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- aplicando colspan e rowspan
+      -->
+
+    <table border ="1">
+        <tr>
+            <th>Nome</th>
+            <th colspan="2" >Telefone</th>
+        </tr>
+        <tr>
+            <td>Ricardo</td>
+            <td>89892812</td>
+            <td>87817287</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Joaquim</td>
+            <td>123434</td>
+            <td>121212</td>
+        </tr>
+        <tr>
+            <td>232323</td>
+            <td>232323</td>
+        </tr>
+    </table>
+
+    <p>Trabalhando com formulários</p>
+    <form class ="formulario">
+        <label>Nome</label>
+        <!-- Inseri um campo com digitavel tipo um texto -->
+    </form> <input type="text"><br>
+    </form> <input Sobrenome> </label>
+    </form> <input  type = "text" class = "input-nome">
+    <!-- Tipo senha -->
+    <br><label>senha</label>
+    <input type="password" placeholder="Digite a senha">
+    <input type="button" value="clique aqui" class="botao">
+    <br>
+    <!-- iniciando checkbox(opções) -->
+    <input type="checkbox" class="checar"> Eu tenho uma bicicleta <br>
+    <input type="checkbox" class="checar"> Eu tenho uma moto <br>
+    <input type="checkbox" class="checar"> Eu tenho um carro <br>
+
+    <!-- incluindo input de cor -->
+    <input type="color" value="#0000000">
+    <br><label>Data de nascimento</label>
+    <!-- inserindo data -->
+    <input type="data" name="" id="">
+    <input type="datetime-local" name="" id="">
+
+    <!-- tipo email -->
+    <input type="email" placeholder="Digite seu email" class="email">
+
+    <!-- incluindo input para selecionar arquivo -->
+    <input type="file">
+
+    <!-- input de seleção -->
+    <select class="selecao">
+    <!-- atributo value, enviara o valor do item selecionado para o  -->
+    <option value="" selected>Seleciona a escolaridade</option>
+    <option value="Primeiro colegial" 1º Medio></option>
+    <option value="Segundo colegial" 2º Medio></option>
+    <option value="Terceiro colegial" 3º Medio></option>
+</select>
+    <!-- input de seleção -->
+    <select class="selecao">
+    <!-- atributo value, enviara o valor do item selecionado para o servidor -->
+    <option value="" selected>Seleciona a escolaridade</option>
+    <option value="Primeiro colegial" 1º Medio></option>
+    <option value="Segundo colegial" 2º Medio></option>
+    <option value="Terceiro colegial" 3º Medio></option>
+</select>
+
+<!-- criando input radio button -->
+<p>Radio button</p>
+<input type="radio" name="tamanho" pequeno>
+<input type="radio" name="tamanho" checked medio>
+<input type="radio" name="tamanho" grande>
+<input type="radio" name="tamanho" outro>
+<br>
+
+<p>Radio button</p>
+<input type="radio" name="tamanho" class="radio" pequeno>
+<input type="radio" name="tamanho" class="radio" checked medio>
+<input type="radio" name="tamanho" class="radio" grande>
+<input type="radio" name="tamanho" class="radio" outro>
+
+<!-- cria um grupo de componentes -->
+<fieldset>
+    <legend>Descrição</legend>
+    <textarea name="" id="">
+
+    </textarea>
+</fieldset>
+
+<!-- botão de enviar -->
+<input type="submit" value="enviar">
+
+<!-- botão de limpar ou resetar -->
+<input type="submit" value="limpar">
+    
+</form>
 </body>
 </html>

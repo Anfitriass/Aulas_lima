@@ -1,0 +1,17 @@
+.corpo {
+    background-color: rgb(0, 0, 0);
+}
+
+.input-senha {
+    margin-top: 28px;
+}
+
+.formulario {
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 300px;
+}
