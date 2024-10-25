@@ -9,7 +9,7 @@
 }
 body{
     color:azure;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 a{
     text-decoration: none;
@@ -20,8 +20,7 @@ a{
     color: azure;
 }
 nav{
-    background: rgb(27,11,1);
-    background: linear-gradient(90deg, rgba(27,11,1,1) 7%, rgba(52,19,0,1) 51%, rgba(90,28,0,1) 100%);
+    background-color: rgb(255, 255, 255);
     max-width: 1120px;
     width: 100%;
     margin: auto;
@@ -34,16 +33,17 @@ nav{
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    align-items: center;
+    right: auto;
 }
 li{
     list-style: none;
 }
 li > a{
-    color: azure;
+    color: rgb(0, 0, 0);
 }
 .acessar{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
 }
 .banner-cafe{
     max-width: 1120px;
@@ -52,7 +52,7 @@ li > a{
 }
 .banner-cafe > img{
     width: 100%;
-    box-shadow: 10px 0px 20px rgba(89, 40, 0, 0.452);
+    box-shadow: 10px 0px 20px rgb(255, 255, 255);
     border-radius: 2px;
     opacity: 0.7;
 }
@@ -123,7 +123,7 @@ li > a{
 
 .rodape-card{
     background: rgb(90,28,0);
-    background: linear-gradient(90deg, rgba(90,28,0,1) 0%, rgba(202,121,74,1) 50%, rgba(90,28,0,1) 100%);
+    background: linear-gradient(90deg, rgba(90,28,0,1) 0%, rgba(202,121,74,1) 50%, rgba(90,28,0,1) 100%);;
     padding: 3px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -197,35 +197,4 @@ button{
     position: absolute;
     top: 15%;
     left: 37%;
-}
-
-/* Estilização melhores avaliados */
-
-.conteiner-galeria{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-    background: rgb(27,11,1);
-    background: linear-gradient(90deg, rgba(27,11,1,1) 7%, rgba(52,19,0,1) 51%, rgba(90,28,0,1) 100%);
-}
-
-.item-galeria{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 8px;
-    background: rgb(90,28,0);
-    background: linear-gradient(90deg, rgba(90,28,0,1) 0%, rgba(202,121,74,1) 50%, rgba(90,28,0,1) 100%);
-}
-
-.item-galeria img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease, opacity 0.3 ease;
-}
-
-.item-galeria img:hover{
-    transform: scale(1.1);
 }
